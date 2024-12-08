@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css"> -->
+    <title>Spotify Clone</title> 
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs@1.0.0-beta.0.1.8/dist/Shery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="/images/Spotify_favicon.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
-    
+    <div id="main">
     <div id="sidebar">
         <div id="logo">
-            <a href="">
+            <a class="Spotifylogo" href="">
                 <img src="images/Spotify Logo.png" alt="Logo">
             </a>
         </div>
@@ -60,12 +62,12 @@
         <div id="policies">
             <ul>
                 <li>
-                    <span>Cookies</span>
+                    <span class="leftbar">Cookies</span>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <span>privacy</span>
+                    <span class="leftbar">privacy</span>
             </li>
             </ul>
         </div>
@@ -78,13 +80,13 @@
                 <div id="btn2"><i class="ri-arrow-right-s-line"></i></div>
             </div>
             <div id="navbar">
-                <a href="http://127.0.0.1:5500/signup.html">Sign Up</a>
+                <a class="sign" href="./signup.html">Sign Up</a>
                 <button>Log In</button>
             </div>
         </div>
 
         <div id="spotify-playlist">
-            <h2>Spotify Playlists</h2>
+            <h2 class="playlis">Spotify Playlists</h2>
 
 
             <div id="list">
@@ -314,11 +316,16 @@
                 <h5>Preview of Spotify</h5>
                 <p>Sign up to get unlimited songs and podcasts with occasional ads. no credut card needed.</p>
             </div>
-            <a href="http://127.0.0.1:5500/signup.html">Sign Up free</a>
+            <a href="signup.html">Sign Up free</a>
         </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>    
+    <script src="https://unpkg.com/sheryjs@1.0.0-beta.0.1.8/dist/Shery.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://kit.fontawesome.com/6a5c6cc303.js" crossorigin="anonymous"></script>
-    <script src="spotify.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
